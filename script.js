@@ -4,9 +4,9 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 /**
-* Open Index menubar
-* @returns {undefined}
-*/
+ * Open Index menubar
+ * @returns {undefined}
+ */
 const openIndexMenu = () => {
   $('.open_index_menu_wrap').addEventListener('click', () => {
     $('.open_index_menu_wrap').classList.add('hide_menu');
@@ -27,10 +27,6 @@ const closeIndexMenu = () => {
   });
 };
 
-const smoothScroll = () => $('.jump_to').addEventListener('click', () => {
-  console.log("hello");
-});
-
 /**
  * Create List items for index menubar
  * @returns {mixin} HTML h2 list
@@ -44,5 +40,4 @@ window.onload = () => {
   openIndexMenu();
   closeIndexMenu();
   fillIndexManubar();
-  smoothScroll();
 };
