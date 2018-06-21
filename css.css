@@ -40,7 +40,7 @@ body {
 }
 
 .main_content.shrink_padding {
-  padding: 5% 25% 5% 5%;
+  padding: 5% 30% 5% 10%;
   transition-property: padding;
   transition-duration: 400ms;
   transition-timing-function: ease;
