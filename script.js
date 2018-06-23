@@ -8,11 +8,9 @@ const $$ = document.querySelectorAll.bind(document);
  * @returns {undefined}
  */
 const openIndexMenu = () => {
-  $('.open_index_menu_wrap').addEventListener('click', () => {
-    $('.open_index_menu_wrap').classList.add('hide_menu');
-    $('.index_side_menu_wrap').classList.add('status_open');
-    $('.main_content').classList.add('shrink_padding');
-  });
+  $('.open_index_menu_wrap').classList.add('hide_menu');
+  $('.index_side_menu_wrap').classList.add('status_open');
+  $('.main_content').classList.add('shrink_padding');
 };
 
 /**
@@ -20,11 +18,9 @@ const openIndexMenu = () => {
  * @returns {undefined}
  */
 const closeIndexMenu = () => {
-  $('.index_side_menu_close_wrap').addEventListener('click', () => {
     $('.open_index_menu_wrap').classList.remove('hide_menu');
     $('.index_side_menu_wrap').classList.remove('status_open');
     $('.main_content').classList.remove('shrink_padding');
-  });
 };
 
 /**
