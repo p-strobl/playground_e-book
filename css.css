@@ -5,7 +5,7 @@ body {
   overflow-y: scroll;
 }
 
-.button_div:hover {
+.open_index_menu_wrap:hover, .close_index_menu_wrap:hover {
   cursor: pointer;
 }
 
@@ -15,6 +15,9 @@ body {
   right: 3%;
   border: 1px solid #36454F;
   border-radius: 2px;
+  transition-property: right;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
 }
 
 .open_index_menu_wrap:hover {
@@ -22,7 +25,10 @@ body {
 }
 
 .open_index_menu_wrap.hide_menu {
-  display: none;
+  right: -10%;
+  transition-property: right;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
 }
 
 .open_index_menu_content {
