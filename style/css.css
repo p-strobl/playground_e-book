@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: beige;
+  background: url("background/wood2.jpg") fixed;
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
@@ -22,8 +22,8 @@ button:hover {
 
 .open_index_menu_button {
   position: fixed;
-  top: 20%;
-  right: 2%;
+  top: 6vh;
+  right: 2vw;
   height: 2em;
   width: 16%;
   font-size: 1.2em;
@@ -31,10 +31,11 @@ button:hover {
   background-color: transparent;
   border: 1px solid #36454F;
   border-radius: 2px;
-  transition-property: right, opacity;
-  transition-duration: 400ms;
-  transition-timing-function: ease;
-  opacity: .2;
+  /*transition-property: right, opacity;*/
+  /*transition-duration: 400ms;*/
+  /*transition-timing-function: ease;*/
+  opacity: .6;
+  overflow: hidden;
 }
 
 .open_index_menu_button:hover {
@@ -44,24 +45,24 @@ button:hover {
 
 .open_index_menu_button.toggle_index_menu {
   right: -10%;
-  transition-property: right, opacity;
-  transition-duration: 400ms;
-  transition-timing-function: ease;
+  /*transition-property: right, opacity;*/
+  /*transition-duration: 400ms;*/
+  /*transition-timing-function: ease;*/
 }
 
 .main_content {
   padding: 5% 20%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .9);
-  transition-property: padding;
-  transition-duration: 400ms;
-  transition-timing-function: ease;
+  /*transition-property: padding;*/
+  /*transition-duration: 400ms;*/
+  /*transition-timing-function: ease;*/
 }
 
 .main_content.shrink_padding {
   padding: 5% 30% 5% 10%;
-  transition-property: padding;
-  transition-duration: 400ms;
-  transition-timing-function: ease;
+  /*transition-property: padding;*/
+  /*transition-duration: 400ms;*/
+  /*transition-timing-function: ease;*/
 }
 
 .h2_node {
@@ -98,9 +99,9 @@ button:hover {
   right: 0;
   width: 0%;
   height: 100vh;
-  transition-property: width;
-  transition-duration: 200ms;
-  transition-timing-function: ease;
+  /*transition-property: width;*/
+  /*transition-duration: 200ms;*/
+  /*transition-timing-function: ease;*/
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .9);
   background-color: white;
   overflow-y: scroll;
@@ -108,9 +109,9 @@ button:hover {
 
 .index_side_menu_wrap.status_open {
   width: 20%;
-  transition-property: width;
-  transition-duration: 200ms;
-  transition-timing-function: ease;
+  /*transition-property: width;*/
+  /*transition-duration: 200ms;*/
+  /*transition-timing-function: ease;*/
 }
 
 /*.index_menu_ol {*/
@@ -144,7 +145,8 @@ button:hover {
   font-style: italic;
 }
 
-.index_menu_ol h1:hover, li:hover{
+.index_menu_ol h1:hover, li:hover {
+  background-color: beige;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .9);
 }
 

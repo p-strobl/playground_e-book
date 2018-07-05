@@ -24,7 +24,9 @@ const fillIndexMenuWithH1Node = (mainH1Node, indexMenuOlNode) => {
         <h1 class="index_menu_ol_li_h1">${mainH1Node.innerHTML}</h1>
       </a>`);
 };
+const indexMenuH1Node = () => {
 
+};
 /**
  * Add li nodes to ol index menu
  * @returns {HTMLElement}
@@ -44,8 +46,9 @@ const fillIndexMenuWithLiNodes = (mainH2Nodes, indexMenuOlNode) => {
  * Adds css class to node
  * @returns {undefined}
  * */
-const addClassTo = (node, classSelector) =>
+const addClassTo = (node, classSelector) => {
   node.classList.add(classSelector);
+};
 
 /**
  * Removes css class from multiple nodes
@@ -68,21 +71,24 @@ const toggleIndexMenu = event => {
 
 /**
  * Based on article node window y position, adds effect to matched index menu li node
- * @returns {event}
+ * @returns {onchange}
  * */
 const highlightIndexLiNode = (indexMenuAnchorNodes, articleNodes) => {
   removeClassFromEach(indexMenuAnchorNodes, 'highlight_by_scroll');
   const windowScrollYTopPosition = Math.round(window.scrollY);
   const windowScrollYCenterPosition = Math.round(windowScrollYTopPosition + (window.innerHeight / 2));
-  const matchedArticleNode = articleNodes.find(article => windowScrollYTopPosition >= article.offsetTop && windowScrollYTopPosition <= article.offsetTop + (article.offsetHeight));
+  const matchedArticleNode = articleNodes.find(article =>
+    windowScrollYCenterPosition >= article.offsetTop &&
+    windowScrollYCenterPosition <= article.offsetTop + article.offsetHeight);
   if (matchedArticleNode !== undefined) {
-    const matchedArticleOffsetBottom = matchedArticleNode.offsetTop + matchedArticleNode.offsetHeight;
     const matchedLiAnchorNode = indexMenuAnchorNodes.find(aNode => aNode.name === matchedArticleNode.id);
-    const nextMatchedLiAnchorNode = matchedLiAnchorNode.nextElementSibling;
-    if (windowScrollYCenterPosition >= matchedArticleNode.offsetTop && windowScrollYCenterPosition <= matchedArticleOffsetBottom) {
+    const matchedNextLiAnchorNode = indexMenuAnchorNodes.find(aNode => windowScrollYCenterPosition >= aNode.offsetTop + aNode.offsetHeight);
+    if (matchedArticleNode) {
       addClassTo(matchedLiAnchorNode, 'highlight_by_scroll');
-    } else if (windowScrollYCenterPosition >= matchedArticleOffsetBottom) {
-      addClassTo(nextMatchedLiAnchorNode, 'highlight_by_scroll');
+    } else if (matchedNextLiAnchorNode) {
+      addClassTo(matchedNextLiAnchorNode, 'highlight_by_scroll');
     }
+    matchedLiAnchorNode.scrollIntoView();
   }
 };
+
