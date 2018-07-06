@@ -15,10 +15,10 @@ Node.prototype.on = (name, fn) => this.addEventListener(name, fn);
 NodeList.prototype.on = (name, fn) => this.forEach(element => element.on(name, fn));
 
 /**
- * Create anchor node list from index menu
+ * Create H1 node list from main content
  * @returns {HTMLElement}
  * */
-const getIndexMenuAnchorNodes = () => Array.from($$('#index_menu_ol a'));
+const getMainH1Node = () => $('main h1');
 
 /**
  * Create article node List
@@ -27,10 +27,10 @@ const getIndexMenuAnchorNodes = () => Array.from($$('#index_menu_ol a'));
 const getMainArticleNodes = () => Array.from($$('main article'));
 
 /**
- * Create H1 node list from main content
+ * Create main article footer span node
  * @returns {HTMLElement}
  * */
-const getMainH1Node = () => $('main h1');
+const getArticleFooterSpanNode = () => Array.from($$('.article_footer_p_span'));
 
 /**
  * Create H2 node list from main content
@@ -38,15 +38,20 @@ const getMainH1Node = () => $('main h1');
  * */
 const getMainH2Nodes = () => Array.from($$('main h2'));
 
+/**
+ * Create node from close index menu button
+ * @returns {HTMLElement}
+ * */
+const getCloseIndexMenuButton = () => $('#close_index_menu_button');
 
 /**
  * Create ol node from index menu
  * @returns {HTMLElement}
  * */
-const getIndexMenuOlNode = () => $('#index_menu_ol');
+const getIndexMenuOlNode = () => $('#nav_index_menu_ol');
 
 /**
- * Create main article footer span node
+ * Create anchor node list from index menu
  * @returns {HTMLElement}
  * */
-const getArticleFooterSpanNode = () => Array.from($$('.article_footer_p_span'));
+const getIndexMenuAnchorNodes = () => Array.from($$('#nav_index_menu_ol a'));

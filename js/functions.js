@@ -18,15 +18,13 @@ const fillArticleFooterSpan = articleFooterSpanNodes =>
  * Add h1 node to index menu
  * @returns {HTMLElement}
  * */
-const fillIndexMenuWithH1Node = (mainH1Node, indexMenuOlNode) => {
-  indexMenuOlNode.insertAdjacentHTML('afterbegin',
-    `<a href="#${mainH1Node.id}" name="${mainH1Node.id}">
+const fillIndexMenuWithH1Node = (mainH1Node, indexMenuCloseButton) => {
+  indexMenuCloseButton.insertAdjacentHTML('afterend',
+    `<a href="#${mainH1Node.id}" class="index_${mainH1Node.id}" name="${mainH1Node.id}">
         <h1 class="index_menu_ol_li_h1">${mainH1Node.innerHTML}</h1>
       </a>`);
 };
-const indexMenuH1Node = () => {
 
-};
 /**
  * Add li nodes to ol index menu
  * @returns {HTMLElement}
