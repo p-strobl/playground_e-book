@@ -59,11 +59,12 @@ const removeClassFromEach = (nodes, classSelector) =>
  * Toggle "open index menu button", "main content" and "index menu wrap" class
  * @returns {event}
  * */
-const toggleIndexMenu = event => {
+const toggleIndexMenu = (event, [...toggleElements], cssClass) => {
   if (event.target.id === 'open_index_menu_button' || event.target.id === 'close_index_menu_button') {
-    $('.open_index_menu_button').classList.toggle('toggle_index_menu');
-    $('.index_side_menu_wrap').classList.toggle('status_open');
-    $('.main_content').classList.toggle('shrink_padding');
+    toggleElements.forEach(element => element.classList.toggle(cssClass));
+    //   $('.open_index_menu_button').classList.toggle('toggle_index_menu');
+    //   $('.index_side_menu_wrap').classList.toggle('status_open');
+    //   $('.main_content').classList.toggle('shrink_padding');
   }
 };
 

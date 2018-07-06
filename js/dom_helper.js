@@ -14,6 +14,7 @@ const $$ = document.querySelectorAll.bind(document);
 Node.prototype.on = (name, fn) => this.addEventListener(name, fn);
 NodeList.prototype.on = (name, fn) => this.forEach(element => element.on(name, fn));
 
+const getMainContent = () => $('#main_content');
 /**
  * Create H1 node list from main content
  * @returns {HTMLElement}
@@ -39,11 +40,22 @@ const getArticleFooterSpanNode = () => Array.from($$('.article_footer_p_span'));
 const getMainH2Nodes = () => Array.from($$('main h2'));
 
 /**
+ * Create open index menu button reference
+ * @returns {HTMLElement}
+ * */
+const getOpenIndexMenuButton = () => $('#open_index_menu_button');
+
+/**
  * Create node from close index menu button
  * @returns {HTMLElement}
  * */
 const getCloseIndexMenuButton = () => $('#close_index_menu_button');
 
+/**
+ * Create nav index menu node reference
+ * @returns {HTMLElement}
+ * */
+const getNavIndexMenu = () => $('#nav_index_menu');
 /**
  * Create ol node from index menu
  * @returns {HTMLElement}

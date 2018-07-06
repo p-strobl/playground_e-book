@@ -7,7 +7,6 @@
 }
 
 body {
-  background: url("background/wood.jpg") fixed;
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
@@ -50,6 +49,10 @@ button:hover {
   transition-timing-function: ease;
 }
 
+.main_content_wrap {
+  background: url("background/wood.jpg") fixed;
+}
+
 .main_content {
   padding: 5% 20%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .9);
@@ -58,7 +61,8 @@ button:hover {
   transition-timing-function: ease;
 }
 
-.main_content.shrink_padding {
+.main_content.toggle_index_menu {
+/*.main_content.shrink_padding {*/
   padding: 5% 30% 5% 10%;
   transition-property: padding;
   transition-duration: 400ms;
@@ -107,16 +111,13 @@ button:hover {
   overflow-y: scroll;
 }
 
-.index_side_menu_wrap.status_open {
+.index_side_menu_wrap.toggle_index_menu {
+/*.index_side_menu_wrap.status_open {*/
   width: 20%;
   transition-property: width;
   transition-duration: 200ms;
   transition-timing-function: ease;
 }
-
-/*.index_menu_ol {*/
-  /*overflow-x: hidden;*/
-/*}*/
 
 .index_menu_ol_li_h1 {
   font-size: 1em;
