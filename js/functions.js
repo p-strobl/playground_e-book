@@ -35,10 +35,10 @@ const fillIndexMenuWithLiNodes = (mainH2Nodes, indexMenuOlNode) => {
       `<a href="#jump_to_anchor_${index}" name="jump_to_anchor_${index}">
           <li class="index_menu_ol_li">${h2.innerHTML}
             <span class="index_menu_ol_li_span_leading_dots"></span>
-            <span class="index_menu_ol_li_span_counter">${index + 1}</span>
           </li>
         </a>`));
 };
+// <span class="index_menu_ol_li_span_counter">${index + 1}</span>
 
 /**
  * Adds css class to node
@@ -81,13 +81,13 @@ const highlightIndexLiNode = (indexMenuAnchorNodes, articleNodes) => {
     windowScrollYCenterPosition <= article.offsetTop + article.offsetHeight);
   if (matchedArticleNode !== undefined) {
     const matchedLiAnchorNode = indexMenuAnchorNodes.find(aNode => aNode.name === matchedArticleNode.id);
-    const matchedNextLiAnchorNode = indexMenuAnchorNodes.find(aNode => windowScrollYCenterPosition >= aNode.offsetTop + aNode.offsetHeight);
+    // const matchedNextLiAnchorNode = indexMenuAnchorNodes.find(aNode => windowScrollYCenterPosition >= aNode.offsetTop + aNode.offsetHeight);
     if (matchedArticleNode) {
       addClassTo(matchedLiAnchorNode, 'highlight_by_scroll');
-    } else if (matchedNextLiAnchorNode) {
-      addClassTo(matchedNextLiAnchorNode, 'highlight_by_scroll');
+    // } else if (matchedNextLiAnchorNode) {
+    //   addClassTo(matchedNextLiAnchorNode, 'highlight_by_scroll');
+      matchedLiAnchorNode.scrollIntoView();
     }
-    matchedLiAnchorNode.scrollIntoView();
   }
 };
 
