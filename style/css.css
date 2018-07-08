@@ -57,7 +57,7 @@ button:hover {
 
 .main_content {
   /*grid-column: 1;*/
-  padding: 5% 10%;
+  padding: 5% 20%;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .9);
   /*transition-property: padding;*/
   /*transition-duration: 400ms;*/
@@ -102,11 +102,11 @@ button:hover {
 
 .index_side_menu_wrap {
   display: grid;
-  grid-template-rows: 25% auto;
+  /*grid-template-rows: 25% auto;*/
   position: fixed;
   top: 0;
   right: 0;
-  width: 25vw;
+  width: 20vw;
   height: 100vh;
   /*transition-property: width;*/
   /*transition-duration: 200ms;*/
@@ -117,23 +117,22 @@ button:hover {
 }
 
 .index_side_menu_header_wrap {
-  position: fixed;
-  grid-row: 1;
-  width: 25vw;
+  /*position: fixed;*/
+  /*grid-row: 1;*/
+  width: 20vw;
   background-color: white;
-  z-index: 10;
+  /*z-index: 10;*/
 }
 
 .nav_index_menu_ol {
   counter-reset: customNumbering;
   /*height: 100vh;*/
-  grid-row: 2;
+  /*grid-row: 2;*/
 }
 
 .index_menu_ol_li {
   position: relative;
   list-style: none;
-
 }
 
 .index_menu_ol_li::before {
