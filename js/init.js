@@ -7,7 +7,7 @@
    * */
   const initDomCompletion = () => {
     addIdToArticleNodes(getMainArticleNodes());
-    fillIndexMenuWithH1Node(getMainH1Node(), getCloseIndexMenuButton());
+    // fillIndexMenuWithH1Node(getMainH1Node(), getCloseIndexMenuButton());
     fillIndexMenuWithLiNodes(getMainH2Nodes(), getIndexMenuOlNode());
     fillArticleFooterSpan(getArticleFooterSpanNode());
   };
@@ -32,4 +32,4 @@
 
   init();
 
-};
+}

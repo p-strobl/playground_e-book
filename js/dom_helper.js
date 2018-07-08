@@ -56,6 +56,8 @@ const getCloseIndexMenuButton = () => $('#close_index_menu_button');
  * @returns {HTMLElement}
  * */
 const getNavIndexMenu = () => $('#nav_index_menu');
+
+const getIndexMenuHeader = () => $('.index_side_menu_header');
 /**
  * Create ol node from index menu
  * @returns {HTMLElement}

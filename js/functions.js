@@ -14,16 +14,16 @@ const addIdToArticleNodes = articleNodes =>
 const fillArticleFooterSpan = articleFooterSpanNodes =>
   articleFooterSpanNodes.forEach((spanNode, index) => spanNode.textContent = index + 1);
 
-/**
- * Add h1 node to index menu
- * @returns {HTMLElement}
- * */
-const fillIndexMenuWithH1Node = (mainH1Node, indexMenuCloseButton) => {
-  indexMenuCloseButton.insertAdjacentHTML('afterend',
-    `<a href="#${mainH1Node.id}" class="index_${mainH1Node.id}" name="${mainH1Node.id}">
-        <h1 class="index_menu_ol_li_h1">${mainH1Node.innerHTML}</h1>
-      </a>`);
-};
+// /**
+//  * Add h1 node to index menu
+//  * @returns {HTMLElement}
+//  * */
+// const fillIndexMenuWithH1Node = (mainH1Node, indexMenuCloseButton) => {
+//   indexMenuCloseButton.insertAdjacentHTML('afterend',
+//     `<a href="#${mainH1Node.id}" class="index_${mainH1Node.id}" name="${mainH1Node.id}">
+//         <h1 class="index_menu_ol_li_h1">${mainH1Node.innerHTML}</h1>
+//       </a>`);
+// };
 
 /**
  * Add li nodes to ol index menu
@@ -88,6 +88,7 @@ const highlightIndexLiNode = (indexMenuAnchorNodes, articleNodes) => {
     //   addClassTo(matchedNextLiAnchorNode, 'highlight_by_scroll');
       matchedLiAnchorNode.scrollIntoView();
     }
+    if (windowScrollYTopPosition === 0) getIndexMenuHeader().scrollIntoView();
   }
 };
 
