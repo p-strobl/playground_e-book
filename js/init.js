@@ -7,8 +7,8 @@
    * */
   const initDomCompletion = () => {
     addIdToArticleNodes(getMainArticleNodes());
-    // fillIndexMenuWithH1Node(getMainH1Node(), getCloseIndexMenuButton());
-    fillIndexMenuWithLiNodes(getMainH2Nodes(), getIndexMenuOlNode());
+    // fillIndexMenuWithLiNodes(getMainH2Nodes(), getIndexMenuOlNode());
+    appendLisToIndexNavbar(getMainH2Nodes(), getNavIndexMenuOlNode());
     fillArticleFooterSpan(getArticleFooterSpanNode());
   };
 

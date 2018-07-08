@@ -62,7 +62,7 @@ const getIndexMenuHeader = () => $('.index_side_menu_header');
  * Create ol node from index menu
  * @returns {HTMLElement}
  * */
-const getIndexMenuOlNode = () => $('#nav_index_menu_ol');
+const getNavIndexMenuOlNode = () => $('#nav_index_menu_ol');
 
 /**
  * Create anchor node list from index menu

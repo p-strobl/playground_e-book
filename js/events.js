@@ -5,7 +5,7 @@
  * @returns {event}
  * */
 const initOnScroll = () => document.on('scroll', () =>
-  highlightIndexLiNode(getIndexMenuAnchorNodes(), getMainArticleNodes()));
+  highlightIndexLiNode(getIndexMenuAnchorNodes(), getMainArticleNodes(), getIndexMenuHeader()));
 
 /**
  * Event listining for click
