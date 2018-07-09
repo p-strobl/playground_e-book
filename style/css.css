@@ -111,15 +111,16 @@ button:hover {
   width: 20vw;
 }
 
-.index_side_menu_header {
+.index_menu_header {
   height: 100%;
   width: 100%;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 1.5vh;
 }
 
 .nav_index_menu_ol {
   counter-reset: customNumbering;
+  margin-top: 2vh;
 }
 
 .index_menu_ol_li {

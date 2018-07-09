@@ -28,6 +28,10 @@ const fillArticleFooterSpan = articleFooterSpanNodes =>
 //         </a>`));
 // };
 
+/**
+ * Creates <a href="..." name="..."><a/> DOM node with href and name attr.
+ * @returns {HTMLElement}
+ * */
 const createAnchorNode = (setHref, setName) => {
   const anchor = document.createElement('a');
   anchor.setAttribute('href', setHref);
@@ -35,6 +39,10 @@ const createAnchorNode = (setHref, setName) => {
   return anchor;
 };
 
+/**
+ * Create <li class="...">...</li> DOM node with class and text content attr.
+ * @returns {HTMLElement}
+ * */
 const createLiNode = (setClass, setTextContent) => {
   const li = document.createElement('li');
   li.classList.add(setClass);
@@ -42,12 +50,20 @@ const createLiNode = (setClass, setTextContent) => {
   return li;
 };
 
+/**
+ * Create <span class="..."></span> DOM node with class attr.
+ * @returns {HTMLElement}
+ * */
 const createSpanNode = setClass => {
   const span = document.createElement('span');
   span.classList.add(setClass);
   return span;
 };
 
+/**
+ * Append nodes to each other to build complete anchor node for nav_index_menu_ol
+ * @returns {HTMLElement}
+ * */
 const buildAppendedIndexLiNode = (navIndexMenuOlNode, element, index) => {
   return navIndexMenuOlNode.appendChild
   (createAnchorNode(`#jump_to_anchor_${index}`, `jump_to_anchor_${index}`)).appendChild
@@ -55,22 +71,26 @@ const buildAppendedIndexLiNode = (navIndexMenuOlNode, element, index) => {
   (createSpanNode('index_menu_ol_li_span_leading_dots'));
 };
 
+/**
+ * Append complete build li node to nav_index_menu for each availible main_article node
+ * @returns {HTMLElement}
+ * */
 const appendLisToIndexNavbar = (mainH2Nodes, navIndexMenuOlNode) =>
   mainH2Nodes.forEach((h2, index) => buildAppendedIndexLiNode(navIndexMenuOlNode, h2, index));
 
 /**
- * Adds css class to node
+ * Add css class to node
  * @returns {undefined}
  * */
-const addClassTo = (node, classSelector) => {
+const addClassAttrTo = (node, classSelector) => {
   node.classList.add(classSelector);
 };
 
 /**
- * Removes css class from multiple nodes
+ * Remove css class from multiple nodes
  * @returns {undefined}
  * */
-const removeClassFromEach = (nodes, classSelector) =>
+const removeClassAttrFromEach = (nodes, classSelector) =>
   nodes.forEach(node => node.classList.remove(classSelector));
 
 /**
@@ -88,16 +108,17 @@ const toggleIndexMenu = (event, [...toggleElements], cssClass) => {
  * @returns {onchange}
  * */
 const highlightIndexLiNode = (indexMenuAnchorNodes, articleNodes, indexMenuHeader) => {
-  removeClassFromEach(indexMenuAnchorNodes, 'highlight_by_scroll');
+  removeClassAttrFromEach(indexMenuAnchorNodes, 'highlight_by_scroll');
   const windowScrollYTopPosition = Math.round(window.scrollY);
   const windowScrollYCenterPosition = Math.round(windowScrollYTopPosition + (window.innerHeight / 2));
   const matchedArticleNode = articleNodes.find(article =>
     windowScrollYCenterPosition >= article.offsetTop &&
     windowScrollYCenterPosition <= article.offsetTop + article.offsetHeight);
   if (matchedArticleNode !== undefined) {
+    // const matchedLiAnchorNode = indexMenuAnchorNodes.find((aNode, index) => aNode[index] === matchedArticleNode.indexOf(index));
     const matchedLiAnchorNode = indexMenuAnchorNodes.find(aNode => aNode.name === matchedArticleNode.id);
     if (matchedArticleNode) {
-      addClassTo(matchedLiAnchorNode, 'highlight_by_scroll');
+      addClassAttrTo(matchedLiAnchorNode, 'highlight_by_scroll');
       matchedLiAnchorNode.scrollIntoView();
     }
     if (windowScrollYTopPosition === 0) indexMenuHeader.scrollIntoView();
