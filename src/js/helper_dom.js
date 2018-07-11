@@ -3,22 +3,14 @@
  * Bind querySelector to $ and $$ in namespace
  * @returns {HTMLElement}
  * */
-export const $ = document.querySelector.bind(document);
-export const $$ = document.querySelectorAll.bind(document);
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
 /**
- * Adds on as event handler to Node and NodeList prototype
- * @returns {event}
- * */
-Node.prototype.on = (name, fn) => this.addEventListener(name, fn);
-NodeList.prototype.on = (name, fn) => this.forEach(element => element.on(name, fn));
-
-export const getMainContent = () => $('#main_content');
-/**
- * Create H1 node list from main content
+ * Create main_content node from main content
  * @returns {HTMLElement}
  * */
-export const getMainH1Node = () => $('main h1');
+export const getMainContent = () => $('#main_content');
 
 /**
  * Create article node List
@@ -45,18 +37,17 @@ export const getMainH2Nodes = () => Array.from($$('main h2'));
 export const getOpenIndexMenuButton = () => $('#open_index_menu_button');
 
 /**
- * Create node from close index menu button
- * @returns {HTMLElement}
- * */
-export const getCloseIndexMenuButton = () => $('#close_index_menu_button');
-
-/**
- * Create nav index menu node reference
+ * Create nav_index_menu node reference
  * @returns {HTMLElement}
  * */
 export const getNavIndexMenu = () => $('#nav_index_menu');
 
-export const getIndexMenuHeader = () => $('.index_side_menu_header');
+/**
+ * Create nav_index_menu_header node reference
+ * @returns {HTMLElement}
+ * */
+export const getIndexMenuHeader = () => $('.index_menu_header');
+
 /**
  * Create ol node from index menu
  * @returns {HTMLElement}

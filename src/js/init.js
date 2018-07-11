@@ -1,13 +1,15 @@
-"use strict";
+import {getArticleFooterSpanNode, getMainArticleNodes, getMainH2Nodes, getNavIndexMenuOlNode} from './helper_dom.js';
+import {addIdToArticleNodes, fillArticleFooterSpan} from './edit_articleNode.js';
+import {appendLisToIndexNavbar} from './create_navbar.js';
+import {initOnClick} from './event_onClick.js';
+import {initOnScroll} from './event_onScroll.js';
 
-{
   /**
    * init DOM completion functions
    * @returns {undefined}
    * */
   const initDomCompletion = () => {
     addIdToArticleNodes(getMainArticleNodes());
-    // fillIndexMenuWithLiNodes(getMainH2Nodes(), getIndexMenuOlNode());
     appendLisToIndexNavbar(getMainH2Nodes(), getNavIndexMenuOlNode());
     fillArticleFooterSpan(getArticleFooterSpanNode());
   };
@@ -30,6 +32,4 @@
     initDocumentEvents();
   };
 
-  init();
-
-}
+init();

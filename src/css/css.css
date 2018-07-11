@@ -9,6 +9,7 @@
 body {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  background: url("background/wood.jpg") fixed;
 }
 
 button:hover {
@@ -47,20 +48,20 @@ button:hover {
 }
 
 .main_content_wrap {
-  background: url("background/wood.jpg") fixed;
+  display: grid;
 }
 
 .main_content {
-  padding: 5% 10%;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .9);
-  width: 100vw;
-  transition-property: width;
+  justify-self: center;
+  padding: 5vh 10vw;
+  width: 90vw;
+  transition-property: padding;
   transition-duration: 400ms;
   transition-timing-function: ease;
 }
 
 .main_content.toggle_index_menu {
-  width: 80vw;
+  padding: 5vh 18vw 5vh 2vw;
 }
 
 .h2_node {
