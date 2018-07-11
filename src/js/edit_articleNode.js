@@ -1,4 +1,3 @@
-// import {articleNodes, articleFooterSpanNodes} from './helper_dom.js';
 /**
  * Add id attribute to all main article node
  * @returns {undefined}

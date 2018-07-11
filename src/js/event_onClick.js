@@ -1,4 +1,4 @@
-import {getOpenIndexMenuButton, getNavIndexMenu, getMainContent} from './helper_dom.js';
+import {getOpenIndexMenuButton, getCloseIndexMenuButton, getNavIndexMenu, getMainContent} from './helper_dom.js';
 import {toggleIndexMenu} from './toggle_menuButton.js';
 
 /**

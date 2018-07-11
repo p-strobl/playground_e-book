@@ -31,10 +31,16 @@ export const getArticleFooterSpanNode = () => Array.from($$('.article_footer_p_s
 export const getMainH2Nodes = () => Array.from($$('main h2'));
 
 /**
- * Create open index menu button reference
+ * Create open index_menu button reference
  * @returns {HTMLElement}
  * */
 export const getOpenIndexMenuButton = () => $('#open_index_menu_button');
+
+/**
+ * Create close index_menu button reference
+ * @returns {HTMLElement}
+ * */
+export const getCloseIndexMenuButton = () => $('#close_index_menu_button');
 
 /**
  * Create nav_index_menu node reference
