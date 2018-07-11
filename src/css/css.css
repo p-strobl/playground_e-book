@@ -95,7 +95,6 @@ button:hover {
 .index_side_menu_wrap {
   display: grid;
   grid-template-columns: 4% auto;
-  grid-template-rows: 5% auto;
   position: fixed;
   top: 0;
   right: 0;
@@ -123,6 +122,7 @@ button:hover {
 .nav_index_menu_ol {
   counter-reset: customNumbering;
   margin-top: 2vh;
+  border-top: 1px solid grey;
 }
 
 .index_menu_ol_li {

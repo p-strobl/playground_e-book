@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/style/css.css" line="194" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="386f2ad3-4c6d-41d1-86d1-058918d87530" name="Default" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/effect_highlight-navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/effect_highlight-navbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,17 +17,15 @@
     <favorites_list name="e-book" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.31112468">
+    <splitter split-orientation="horizontal" split-proportion="0.26405868">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="757">
-                  <caret line="2494" column="6" lean-forward="true" selection-start-line="2494" selection-start-column="6" selection-end-line="2494" selection-end-column="6" />
+                <state relative-caret-position="486">
+                  <caret line="1970" selection-start-line="1970" selection-end-line="1970" />
                   <folding>
-                    <element signature="n#head#0;n#html#0;n#!!top" />
-                    <element signature="n#header#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#article#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#article#2;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -63,64 +57,47 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="toggle_menuButton.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/toggle_menuButton.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="effect_highlight-navbar.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/effect_highlight-navbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="341">
+                  <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.46589717">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/style/css.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="217">
-                      <caret line="113" column="6" lean-forward="true" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="dom_helper.js" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/js/dom_helper.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="120">
-                      <caret line="16" column="20" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="20" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="events.js" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/js/events.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="172">
-                      <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="init.js" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/js/init.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="189">
-                      <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/js/functions.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="213">
-                      <caret line="119" column="27" lean-forward="true" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file leaf-file-name="effect_highlight-navbar.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/effect_highlight-navbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1045">
+                  <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/css/css.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="197">
+                  <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -173,6 +150,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -184,10 +162,21 @@
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/js/events.js" />
         <option value="$PROJECT_DIR$/js/init.js" />
-        <option value="$PROJECT_DIR$/js/dom_helper.js" />
-        <option value="$PROJECT_DIR$/style/css.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/functions.js" />
+        <option value="$PROJECT_DIR$/style/css.css" />
+        <option value="$PROJECT_DIR$/js/appendLiNodes.js" />
+        <option value="$PROJECT_DIR$/js/editArticleNode.js" />
+        <option value="$PROJECT_DIR$/js/toggleMenuButton.js" />
+        <option value="$PROJECT_DIR$/js/navbar_highlightEffect.js" />
+        <option value="$PROJECT_DIR$/js/indexMenuLiNode_append.js" />
+        <option value="$PROJECT_DIR$/js/event_onScroll.js" />
+        <option value="$PROJECT_DIR$/js/dom_helper.js" />
+        <option value="$PROJECT_DIR$/js/menuButton_toggle.js" />
+        <option value="$PROJECT_DIR$/js/event_onClick.js" />
+        <option value="$PROJECT_DIR$/src/js/toggle_menuButton.js" />
+        <option value="$PROJECT_DIR$/src/js/effect_highlight-navbar.js" />
+        <option value="$PROJECT_DIR$/src/css/css.css" />
       </list>
     </option>
   </component>
@@ -205,7 +194,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -214,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,34 +213,30 @@
             <path>
               <item name="e-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-book" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-book" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-              <item name="background" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-book" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -306,6 +290,9 @@
       <workItem from="1531038512059" duration="1958000" />
       <workItem from="1531041007375" duration="47000" />
       <workItem from="1531072858941" duration="7264000" />
+      <workItem from="1531173455613" duration="1551000" />
+      <workItem from="1531251113624" duration="1632000" />
+      <workItem from="1531271743521" duration="3427000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1529928468150</created>
@@ -318,7 +305,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148953000" />
+    <option name="totallyTimeSpent" value="155563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,38 +320,26 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4953846" visible="true" weight="0.17787287" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32923076" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.22140609" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28436518" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4953846" weight="0.17359413" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32820514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32923076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.26153848" />
       <window_info id="Favorites" order="2" sideWeight="0.50461537" side_tool="true" weight="0.12897311" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4953846" weight="0.12897311" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32923076" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35913977" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32903227" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" sideWeight="0.50461537" side_tool="true" weight="0.12897311" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
+      <window_info anchor="bottom" id="Messages" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,83 +384,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2144">
-          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/dom_helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2848">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/dom_helper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
@@ -710,39 +608,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="190">
           <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/dom_helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="113" column="6" lean-forward="true" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+        <state relative-caret-position="1615">
+          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/indexMenuLiNode_create.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/navbar_create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/articleNode_edit.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/event_onScroll.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/navbar_highlightEffect.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="9" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/menuButton_toggle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/indexMenuLiNode_append.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dom_helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/event_onClick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/toggle_menuButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="2494" column="6" lean-forward="true" selection-start-line="2494" selection-start-column="6" selection-end-line="2494" selection-end-column="6" />
+        <state relative-caret-position="486">
+          <caret line="1970" selection-start-line="1970" selection-end-line="1970" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#header#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#article#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#article#2;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -773,10 +721,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
+    <entry file="file://$PROJECT_DIR$/src/js/effect_highlight-navbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="119" column="27" lean-forward="true" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+        <state relative-caret-position="1045">
+          <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
         </state>
       </provider>
     </entry>
