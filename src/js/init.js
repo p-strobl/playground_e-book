@@ -5,11 +5,11 @@ import {
   getNavIndexMenuOlNode,
   getOpenIndexMenuButton,
   getCloseIndexMenuButton
-} from "./helper_dom.js";
-import {addIdToArticleNodes, addPageNrToArticleFooterSpans} from "./edit_articleNode.js";
-import {appendLisToIndexNavbar} from "./create_navbar.js";
-import {initOnClick} from "./event_onClick.js";
-import {initOnScroll} from "./event_onScroll.js";
+} from "./helper/helper_dom.js";
+import {addIdToArticleNodes, addPageNrToArticleFooterSpans} from "./actions/edit_articleNode.js";
+import {appendLisToIndexNavbar} from "./actions/create_navbar.js";
+import {initOnClick} from "./event/event_onClick.js";
+import {initOnScroll} from "./event/event_onScroll.js";
 
 /**
  * init DOM completion functions

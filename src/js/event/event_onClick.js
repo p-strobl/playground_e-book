@@ -1,5 +1,5 @@
-import {getOpenIndexMenuButton, getNavIndexMenu, getMainContent} from "./helper_dom.js";
-import {toggleIndexMenu} from "./toggle_menuButton.js";
+import {getOpenIndexMenuButton, getNavIndexMenu, getMainContent} from "../helper/helper_dom.js";
+import {toggleIndexMenu} from "../actions/toggle_menuButton.js";
 
 /**
  * Event listining for click on open_menu and close_menu button
