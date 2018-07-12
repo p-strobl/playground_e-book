@@ -1,6 +1,6 @@
 /**
  * Add id attribute to all main article nodes
- * @returns {undefined}
+ * @returns {HTMLElement}
  * */
 export const addIdToArticleNodes = articleNodes =>
   articleNodes.forEach((article, index) => article.setAttribute("id", `jump_to_anchor_${index}`));

@@ -13,7 +13,7 @@ import {initOnScroll} from "./events/event_onScroll.js";
 
 /**
  * init DOM completion functions
- * @returns {undefined}
+ * @returns {void}
  * */
 const initDomCompletion = () => {
   addIdToArticleNodes(getMainArticleNodes());
@@ -23,7 +23,7 @@ const initDomCompletion = () => {
 
 /**
  * init DOM events listener
- * @returns {undefined}
+ * @returns {void}
  * */
 const initDocumentEvents = () => {
   initOnClick([getOpenIndexMenuButton(), getCloseIndexMenuButton()]);
@@ -32,7 +32,7 @@ const initDocumentEvents = () => {
 
 /**
  * condense all init caller
- * @returns {undefined}
+ * @returns {void}
  * */
 const init = () => {
   initDomCompletion();

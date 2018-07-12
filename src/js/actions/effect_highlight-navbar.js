@@ -1,6 +1,6 @@
 /**
  * Add css class to node
- * @returns {undefined}
+ * @returns {void}
  * */
 const addClassAttrTo = (node, classSelector) => {
   node.classList.add(classSelector);
@@ -8,7 +8,7 @@ const addClassAttrTo = (node, classSelector) => {
 
 /**
  * Remove css class from multiple nodes
- * @returns {undefined}
+ * @returns {HTMLElement}
  * */
 const removeClassAttrFromEach = (nodes, classSelector) =>
   nodes.forEach(node => node.classList.remove(classSelector));

@@ -6,6 +6,8 @@ import {highlightIndexLiNode} from "../actions/effect_highlight-navbar.js";
  * @returns {event}
  * */
 export const initOnScroll = () => {
+  //
   document.addEventListener("scroll", () =>
     highlightIndexLiNode(getIndexMenuAnchorNodes(), getMainArticleNodes(), getIndexMenuHeader()));
+//  hightlightMenuNodeByArticle
 };
