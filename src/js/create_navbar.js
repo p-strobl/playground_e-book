@@ -1,14 +1,14 @@
-import {createAnchorNode, createLiNode, createSpanNode} from './create_indexMenuLiNode.js';
+import {createAnchorNode, createLiNode, createSpanNode} from "./create_indexMenuLiNode.js";
 
 /**
- * Append nodes to each other to build complete anchor node for nav_index_menu_ol
+ * Append nodes to each other to build complete anchor node for nav_index_menu_ol node
  * @returns {HTMLElement}
  * */
 const buildAppendedIndexLiNode = (navIndexMenuOlNode, element, index) => {
   return navIndexMenuOlNode.appendChild
   (createAnchorNode(`#jump_to_anchor_${index}`, `jump_to_anchor_${index}`)).appendChild
-  (createLiNode('index_menu_ol_li', element.innerHTML)).appendChild
-  (createSpanNode('index_menu_ol_li_span_leading_dots'));
+  (createLiNode("index_menu_ol_li", element.innerHTML)).appendChild
+  (createSpanNode("index_menu_ol_li_span_leading_dots"));
 };
 
 /**

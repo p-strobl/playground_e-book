@@ -1,67 +1,66 @@
-
 /**
- * Bind querySelector to $ and $$ in namespace
+ * Bind querySelector to $ and querySelectorAll to $$ in namespace
  * @returns {HTMLElement}
  * */
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 /**
- * Create main_content node from main content
+ * Create main_content node reference
  * @returns {HTMLElement}
  * */
-export const getMainContent = () => $('#main_content');
+export const getMainContent = () => $("#main_content");
 
 /**
- * Create article node List
+ * Create article node array
  * @returns {HTMLElement}
  * */
-export const getMainArticleNodes = () => Array.from($$('main article'));
+export const getMainArticleNodes = () => Array.from($$("main article"));
 
 /**
- * Create main article footer span node
+ * Create main_article_footer_span node array
  * @returns {HTMLElement}
  * */
-export const getArticleFooterSpanNode = () => Array.from($$('.article_footer_p_span'));
+export const getArticleFooterSpanNode = () => Array.from($$(".article_footer_p_span"));
 
 /**
- * Create H2 node list from main content
+ * Create H2 node array from main_content
  * @returns {HTMLElement}
  * */
-export const getMainH2Nodes = () => Array.from($$('main h2'));
+export const getMainH2Nodes = () => Array.from($$("main h2"));
 
 /**
- * Create open index_menu button reference
+ * Create open_index_menu_button node reference
  * @returns {HTMLElement}
  * */
-export const getOpenIndexMenuButton = () => $('#open_index_menu_button');
+export const getOpenIndexMenuButton = () => $("#open_index_menu_button");
 
 /**
- * Create close index_menu button reference
+ * Create close_index_menu_button node reference
  * @returns {HTMLElement}
  * */
-export const getCloseIndexMenuButton = () => $('#close_index_menu_button');
+export const getCloseIndexMenuButton = () => $("#close_index_menu_button");
 
 /**
  * Create nav_index_menu node reference
  * @returns {HTMLElement}
  * */
-export const getNavIndexMenu = () => $('#nav_index_menu');
+export const getNavIndexMenu = () => $("#nav_index_menu");
 
 /**
  * Create nav_index_menu_header node reference
  * @returns {HTMLElement}
  * */
-export const getIndexMenuHeader = () => $('.index_menu_header');
+export const getIndexMenuHeader = () => $(".index_menu_header");
 
 /**
- * Create ol node from index menu
+ * Create ol node reference from index_menu
  * @returns {HTMLElement}
  * */
-export const getNavIndexMenuOlNode = () => $('#nav_index_menu_ol');
+export const getNavIndexMenuOlNode = () => $("#nav_index_menu_ol");
 
 /**
- * Create anchor node list from index menu
+ * Create anchor node array from index_menu
  * @returns {HTMLElement}
  * */
-export const getIndexMenuAnchorNodes = () => Array.from($$('#nav_index_menu_ol a'));
+export const getIndexMenuAnchorNodes = () => Array.from($$("#nav_index_menu_ol a"));

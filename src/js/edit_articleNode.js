@@ -1,13 +1,13 @@
 /**
- * Add id attribute to all main article node
+ * Add id attribute to all main article nodes
  * @returns {undefined}
  * */
 export const addIdToArticleNodes = articleNodes =>
-  articleNodes.forEach((article, index) => article.setAttribute('id', `jump_to_anchor_${index}`));
+  articleNodes.forEach((article, index) => article.setAttribute("id", `jump_to_anchor_${index}`));
 
 /**
- * Add article number to span node
+ * Add page number to article_footer_span nodes
  * @returns {HTMLElement}
  * */
-export const fillArticleFooterSpan = articleFooterSpanNodes =>
+export const addPageNrToArticleFooterSpans = articleFooterSpanNodes =>
   articleFooterSpanNodes.forEach((spanNode, index) => spanNode.textContent = index + 1);

@@ -40,17 +40,18 @@ const matchedArticleNode = articleNodes => {
  * @returns {HTMLElement}
  * */
 const matchedLiAnchorNode = (indexMenuAnchorNodes, articleNodes) =>
-  indexMenuAnchorNodes.find(aNode => aNode.name === matchedArticleNode(articleNodes).id);
+  indexMenuAnchorNodes.find(indexMenuAnchorNode =>
+    indexMenuAnchorNode.name === matchedArticleNode(articleNodes).id);
 
 /**
- * Based on article node window y position, adds effect to matched index menu li node
+ * Based on article node window y position, add"s highlight effect to matched index_menu_li node
  * @returns {onchange}
  * */
 export const highlightIndexLiNode = (indexMenuAnchorNodes, articleNodes, indexMenuHeader) => {
-  removeClassAttrFromEach(indexMenuAnchorNodes, 'highlight_by_scroll');
+  removeClassAttrFromEach(indexMenuAnchorNodes, "highlight_by_scroll");
   if (matchedArticleNode(articleNodes) !== undefined) {
-      addClassAttrTo(matchedLiAnchorNode(indexMenuAnchorNodes, articleNodes), 'highlight_by_scroll');
-      matchedLiAnchorNode(indexMenuAnchorNodes, articleNodes).scrollIntoView();
+    addClassAttrTo(matchedLiAnchorNode(indexMenuAnchorNodes, articleNodes), "highlight_by_scroll");
+    matchedLiAnchorNode(indexMenuAnchorNodes, articleNodes).scrollIntoView();
     if (windowScrollYTopPosition() <= indexMenuAnchorNodes[0].offsetTop) indexMenuHeader.scrollIntoView();
   }
 };
