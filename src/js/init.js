@@ -7,9 +7,9 @@ import {
   getCloseTableOfContents
 } from "./helper/create.domNodesReference.js";
 import {addIdToArticleNodes, addPageNrToArticleFooterSpans} from "./actions/edit.articleNodes.js";
-import {appendLiToTableOfContents} from "./menu.tableOfContents/append.liToTableOfContents.js";
-import {openAndCloseTableOfContents} from "./menu.tableOfContents/events/onClick.openAndCloseTableOfContents.js";
-import {initOnScroll} from "./menu.tableOfContents/events/onScroll.highlightNode.js";
+import {appendLiToTableOfContents} from "./menu/tabelOfContents/append.liToTableOfContents.js";
+import {openAndCloseTableOfContents} from "./menu/tabelOfContents/events/onClick.openAndCloseTableOfContents.js";
+import {initOnScroll} from "./menu/tabelOfContents/events/onScroll.highlightNode.js";
 
 /**
  * init DOM completion functions

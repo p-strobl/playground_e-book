@@ -1,4 +1,4 @@
-import {geTableOfContentsAnchorNodes, getMainArticleNodes, getTableOfContentsHeader} from "../../helper/create.domNodesReference.js";
+import {geTableOfContentsAnchorNodes, getMainArticleNodes, getTableOfContentsHeader} from "../../../helper/create.domNodesReference.js";
 import {highlightMenuNodeByArticleOnSight} from "../highlight.listNode.js";
 
 /**

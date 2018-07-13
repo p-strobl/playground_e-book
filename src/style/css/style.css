@@ -9,7 +9,7 @@
 body {
   scroll-behavior: smooth;
   overflow-y: scroll;
-  background: url("../background/wood.jpg") fixed;
+  background: url("../assets/wood.jpg") fixed;
 }
 
 button:hover {
