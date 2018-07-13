@@ -1,4 +1,4 @@
-import {getOpenIndexMenuButton, getNavIndexMenu, getMainContent} from "../../helper/create.domNodesReference.js";
+import {getOpenTableOfContents, getTableOfContents, getMainContent} from "../../helper/create.domNodesReference.js";
 import {toggleCssClassFrom} from "../../actions/toggle.cssClass.js";
 
 /**
@@ -8,4 +8,4 @@ import {toggleCssClassFrom} from "../../actions/toggle.cssClass.js";
 export const openAndCloseTableOfContents = ([...openAndCloseButtons]) =>
   openAndCloseButtons.forEach(button =>
     button.addEventListener("click", () =>
-      toggleCssClassFrom([getOpenIndexMenuButton(), getNavIndexMenu(), getMainContent()], "toggle_index_menu")));
+      toggleCssClassFrom([getOpenTableOfContents(), getTableOfContents(), getMainContent()], "toggle_index_menu")));

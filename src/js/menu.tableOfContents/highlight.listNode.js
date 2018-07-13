@@ -2,9 +2,8 @@
  * Add css class to node
  * @returns {void}
  * */
-const addClassAttrTo = (node, classSelector) => {
+const addClassAttrTo = (node, classSelector) =>
   node.classList.add(classSelector);
-};
 
 /**
  * Remove css class from multiple nodes

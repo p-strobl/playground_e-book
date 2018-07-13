@@ -7,8 +7,8 @@ import {createAnchorNode, createLiNode, createSpanNode} from "../helper/create.d
 const buildTableOfContentsLiNode = (navIndexMenuOlNode, element, index) => {
   return navIndexMenuOlNode.appendChild
   (createAnchorNode(`#jump_to_anchor_${index}`, `jump_to_anchor_${index}`)).appendChild
-  (createLiNode("index_menu_ol_li", element.innerHTML)).appendChild
-  (createSpanNode("index_menu_ol_li_span_leading_dots"));
+  (createLiNode("table_of_contents_ol_li", element.innerHTML)).appendChild
+  (createSpanNode("table_of_contents_ol_li_span_leading_dots"));
 };
 
 /**

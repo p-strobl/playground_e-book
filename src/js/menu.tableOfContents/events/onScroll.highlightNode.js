@@ -1,4 +1,4 @@
-import {getIndexMenuAnchorNodes, getMainArticleNodes, getIndexMenuHeader} from "../../helper/create.domNodesReference.js";
+import {geTableOfContentsAnchorNodes, getMainArticleNodes, getTableOfContentsHeader} from "../../helper/create.domNodesReference.js";
 import {highlightMenuNodeByArticleOnSight} from "../highlight.listNode.js";
 
 /**
@@ -7,5 +7,5 @@ import {highlightMenuNodeByArticleOnSight} from "../highlight.listNode.js";
  * */
 export const initOnScroll = () => {
   document.addEventListener("scroll", () =>
-    highlightMenuNodeByArticleOnSight(getIndexMenuAnchorNodes(), getMainArticleNodes(), getIndexMenuHeader()));
+    highlightMenuNodeByArticleOnSight(geTableOfContentsAnchorNodes(), getMainArticleNodes(), getTableOfContentsHeader()));
 };

@@ -2,9 +2,9 @@ import {
   getArticleFooterSpanNode,
   getMainArticleNodes,
   getMainH2Nodes,
-  getNavIndexMenuOlNode,
-  getOpenIndexMenuButton,
-  getCloseIndexMenuButton
+  getTableOfContentsOl,
+  getOpenTableOfContents,
+  getCloseTableOfContents
 } from "./helper/create.domNodesReference.js";
 import {addIdToArticleNodes, addPageNrToArticleFooterSpans} from "./actions/edit.articleNodes.js";
 import {appendLiToTableOfContents} from "./menu.tableOfContents/append.liToTableOfContents.js";
@@ -18,7 +18,7 @@ import {initOnScroll} from "./menu.tableOfContents/events/onScroll.highlightNode
 const initDomCompletion = () => {
   addIdToArticleNodes(getMainArticleNodes());
   addPageNrToArticleFooterSpans(getArticleFooterSpanNode());
-  appendLiToTableOfContents(getMainH2Nodes(), getNavIndexMenuOlNode());
+  appendLiToTableOfContents(getMainH2Nodes(), getTableOfContentsOl());
 };
 
 /**
@@ -26,7 +26,7 @@ const initDomCompletion = () => {
  * @returns {void}
  * */
 const initEvents = () => {
-  openAndCloseTableOfContents([getOpenIndexMenuButton(), getCloseIndexMenuButton()]);
+  openAndCloseTableOfContents([getOpenTableOfContents(), getCloseTableOfContents()]);
   initOnScroll();
 };
 

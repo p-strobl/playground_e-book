@@ -9,7 +9,7 @@ const $$ = document.querySelectorAll.bind(document);
  * Create main_content node reference
  * @returns {HTMLElement}
  * */
-export const getMainContent = () => $("#main_content");
+export const getMainContent = () => $(".main_content");
 
 /**
  * Create article node array
@@ -30,31 +30,37 @@ export const getArticleFooterSpanNode = () => Array.from($$(".article_footer_p_s
 export const getMainH2Nodes = () => Array.from($$("main h2"));
 
 /**
- * Create open_index_menu_button node reference
+ * Create open_table_of_contents_button node reference
  * @returns {HTMLElement}
  * */
-export const getOpenIndexMenuButton = () => $("#open_index_menu_button");
+export const getOpenTableOfContents = () => $("#open_table_of_contents");
 
 /**
- * Create close_index_menu_button node reference
+ * Create close_table_of_contents_button node reference
  * @returns {HTMLElement}
  * */
-export const getCloseIndexMenuButton = () => $("#close_index_menu_button");
+export const getCloseTableOfContents = () => $("#close_table_of_contents");
 
 /**
- * Create nav_index_menu node reference
+ * Create table_of_contents menu node reference
  * @returns {HTMLElement}
  * */
-export const getNavIndexMenu = () => $("#nav_index_menu");
+export const getTableOfContents = () => $(".table_of_contents");
 
 /**
- * Create ol node reference from index_menu
+ * Create table of contents_index_menu_header node reference
  * @returns {HTMLElement}
  * */
-export const getNavIndexMenuOlNode = () => $("#nav_index_menu_ol");
+export const getTableOfContentsHeader = () => $(".table_of_contents_header");
 
 /**
- * Create anchor node array from index_menu
+ * Create ol node reference from table_of_contents
  * @returns {HTMLElement}
  * */
-export const getIndexMenuAnchorNodes = () => Array.from($$("#nav_index_menu_ol a"));
+export const getTableOfContentsOl = () => $(".table_of_contents_ol");
+
+/**
+ * Create anchor node array from table_of_contents
+ * @returns {HTMLElement}
+ * */
+export const geTableOfContentsAnchorNodes = () => Array.from($$(".table_of_contents_ol a"));
