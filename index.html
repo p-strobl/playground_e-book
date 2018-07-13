@@ -2,13 +2,13 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Displays an e-book with dynamic index navigation bar.">
+  <meta name="description" content="Displays an e-book with dynamic table of contents menu bar.">
   <meta name="keyword" content="e-book">
   <meta name="author" content="Philipp">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="src/css/css.css">
+  <link rel="stylesheet" href="src/style/css/style.css">
   <script type="module" src="src/js/init.js"></script>
-  <title>E-Book mit generierten Inhaltverzeichnis</title>
+  <title>E-Book mit dynamisch generierten Inhaltsverzeichnis</title>
 </head>
 <body>
 <button class="open_index_menu_button" id="open_index_menu_button">&#9776; Men&#x00FC;</button>
@@ -2399,9 +2399,9 @@
   <nav class="index_side_menu_wrap" id="nav_index_menu">
     <button class="close_index_menu_button" id="close_index_menu_button">
       <img class="close_index_menu_icon" id="close_index_menu_icon"
-           src="src/icons/icons8-sortieren-rechts-filled-100.png" alt="">
+           src="src/style/icons/icon.arrowRight.png" alt="">
     </button>
-    <div class="index_menu_header">Men&#x00FC;</div>
+    <header class="index_menu_header">Inhaltsverzeichnis</header>
     <ol class="nav_index_menu_ol" id="nav_index_menu_ol">
     </ol>
   </nav>
