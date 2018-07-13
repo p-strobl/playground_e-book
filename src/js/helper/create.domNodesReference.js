@@ -13,19 +13,19 @@ export const getMainContent = () => $(".main_content");
 
 /**
  * Create article node array
- * @returns {HTMLElement}
+ * @returns {array, HTMLElement}
  * */
 export const getMainArticleNodes = () => Array.from($$("main article"));
 
 /**
  * Create main_article_footer_span node array
- * @returns {HTMLElement}
+ * @returns {array, HTMLElement}
  * */
 export const getArticleFooterSpanNode = () => Array.from($$(".article_footer_p_span"));
 
 /**
  * Create H2 node array from main_content
- * @returns {HTMLElement}
+ * @returns {array, HTMLElement}
  * */
 export const getMainH2Nodes = () => Array.from($$("main h2"));
 
@@ -61,6 +61,6 @@ export const getTableOfContentsOl = () => $(".table_of_contents_ol");
 
 /**
  * Create anchor node array from table_of_contents
- * @returns {HTMLElement}
+ * @returns {array, HTMLElement}
  * */
 export const geTableOfContentsAnchorNodes = () => Array.from($$(".table_of_contents_ol a"));

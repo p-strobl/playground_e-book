@@ -35,22 +35,22 @@ const matchedArticleNode = articleNodes => {
 };
 
 /**
- * Find index_li node matches main_article node
+ * Find tabel_of_contents_li node matches main_article node
  * @returns {HTMLElement}
  * */
-const matchedLiAnchorNode = (indexMenuAnchorNodes, articleNodes) =>
-  indexMenuAnchorNodes.find(indexMenuAnchorNode =>
-    indexMenuAnchorNode.name === matchedArticleNode(articleNodes).id);
+const matchedLiAnchorNode = (tableOfContentsAnchorNodes, articleNodes) =>
+  tableOfContentsAnchorNodes.find(anchorNode =>
+    anchorNode.name === matchedArticleNode(articleNodes).id);
 
 /**
- * Based on article node window y position, add"s highlight effect to matched index_menu_li node
+ * Based on article node window y position, add's highlight effect to matched table_of_contents_li node
  * @returns {onchange}
  * */
-export const highlightMenuNodeByArticleOnSight = (indexMenuAnchorNodes, articleNodes, indexMenuHeader) => {
-  removeClassAttrFromEach(indexMenuAnchorNodes, "highlight_by_scroll");
+export const highlightMenuNodeByArticleOnSight = (tableOfContentsAnchorNodes, articleNodes, tableOfContentsHeader) => {
+  removeClassAttrFromEach(tableOfContentsAnchorNodes, "highlight_by_scroll");
   if (matchedArticleNode(articleNodes) !== undefined) {
-    addClassAttrTo(matchedLiAnchorNode(indexMenuAnchorNodes, articleNodes), "highlight_by_scroll");
-    matchedLiAnchorNode(indexMenuAnchorNodes, articleNodes).scrollIntoView();
-    if (windowScrollYTopPosition() <= indexMenuAnchorNodes[0].offsetTop) indexMenuHeader.scrollIntoView();
+    addClassAttrTo(matchedLiAnchorNode(tableOfContentsAnchorNodes, articleNodes), "highlight_by_scroll");
+    matchedLiAnchorNode(tableOfContentsAnchorNodes, articleNodes).scrollIntoView();
+    if (windowScrollYTopPosition() <= tableOfContentsAnchorNodes[0].offsetTop) tableOfContentsHeader.scrollIntoView();
   }
 };
