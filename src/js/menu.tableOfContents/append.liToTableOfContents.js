@@ -15,5 +15,5 @@ const buildTableOfContentsLiNode = (navIndexMenuOlNode, element, index) => {
  * Append complete build li node to nav_index_menu for each availible main_article node
  * @returns {HTMLElement}
  * */
-export const appendLisToIndexNavbar = (mainH2Nodes, navIndexMenuOlNode) =>
+export const appendLiToTableOfContents = (mainH2Nodes, navIndexMenuOlNode) =>
   mainH2Nodes.forEach((h2, index) => buildTableOfContentsLiNode(navIndexMenuOlNode, h2, index));

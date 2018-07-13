@@ -47,7 +47,7 @@ const matchedLiAnchorNode = (indexMenuAnchorNodes, articleNodes) =>
  * Based on article node window y position, add"s highlight effect to matched index_menu_li node
  * @returns {onchange}
  * */
-export const highlightListNode = (indexMenuAnchorNodes, articleNodes, indexMenuHeader) => {
+export const highlightMenuNodeByArticleOnSight = (indexMenuAnchorNodes, articleNodes, indexMenuHeader) => {
   removeClassAttrFromEach(indexMenuAnchorNodes, "highlight_by_scroll");
   if (matchedArticleNode(articleNodes) !== undefined) {
     addClassAttrTo(matchedLiAnchorNode(indexMenuAnchorNodes, articleNodes), "highlight_by_scroll");

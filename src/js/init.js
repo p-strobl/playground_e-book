@@ -5,11 +5,11 @@ import {
   getNavIndexMenuOlNode,
   getOpenIndexMenuButton,
   getCloseIndexMenuButton
-} from "./helper/helper_dom.js";
-import {addIdToArticleNodes, addPageNrToArticleFooterSpans} from "./actions/edit_articleNode.js";
-import {appendLisToIndexNavbar} from "./actions/create_navbar.js";
-import {initOnClick} from "./events/event_onClick.js";
-import {initOnScroll} from "./events/event_onScroll.js";
+} from "./helper/get.domNodes.js";
+import {addIdToArticleNodes, addPageNrToArticleFooterSpans} from "./actions/edit.articleNodes.js";
+import {appendLiToTableOfContents} from "./menu.tableOfContents/append.liToTableOfContents.js";
+import {openAndCloseTableOfContents} from "./menu.tableOfContents/events/onClick.openAndCloseTableOfContents.js";
+import {initOnScroll} from "./menu.tableOfContents/events/onScroll.highlightNode.js";
 
 /**
  * init DOM completion functions
@@ -17,16 +17,16 @@ import {initOnScroll} from "./events/event_onScroll.js";
  * */
 const initDomCompletion = () => {
   addIdToArticleNodes(getMainArticleNodes());
-  appendLisToIndexNavbar(getMainH2Nodes(), getNavIndexMenuOlNode());
   addPageNrToArticleFooterSpans(getArticleFooterSpanNode());
+  appendLiToTableOfContents(getMainH2Nodes(), getNavIndexMenuOlNode());
 };
 
 /**
  * init DOM events listener
  * @returns {void}
  * */
-const initDocumentEvents = () => {
-  initOnClick([getOpenIndexMenuButton(), getCloseIndexMenuButton()]);
+const initEvents = () => {
+  openAndCloseTableOfContents([getOpenIndexMenuButton(), getCloseIndexMenuButton()]);
   initOnScroll();
 };
 
@@ -36,7 +36,7 @@ const initDocumentEvents = () => {
  * */
 const init = () => {
   initDomCompletion();
-  initDocumentEvents();
+  initEvents();
 };
 
 init();

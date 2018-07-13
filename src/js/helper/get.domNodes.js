@@ -48,12 +48,6 @@ export const getCloseIndexMenuButton = () => $("#close_index_menu_button");
 export const getNavIndexMenu = () => $("#nav_index_menu");
 
 /**
- * Create nav_index_menu_header node reference
- * @returns {HTMLElement}
- * */
-export const getIndexMenuHeader = () => $(".index_menu_header");
-
-/**
  * Create ol node reference from index_menu
  * @returns {HTMLElement}
  * */
