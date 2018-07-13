@@ -1,5 +1,5 @@
 import {getIndexMenuAnchorNodes, getMainArticleNodes, getIndexMenuHeader} from "../helper/helper_dom.js";
-import {highlightIndexLiNode} from "../actions/effect_highlight-navbar.js";
+import {highlightListNode} from "../menu.tableOfContents/highlight.listNode.js";
 
 /**
  * Event listining for scroll
@@ -8,6 +8,6 @@ import {highlightIndexLiNode} from "../actions/effect_highlight-navbar.js";
 export const initOnScroll = () => {
   //
   document.addEventListener("scroll", () =>
-    highlightIndexLiNode(getIndexMenuAnchorNodes(), getMainArticleNodes(), getIndexMenuHeader()));
+    highlightListNode(getIndexMenuAnchorNodes(), getMainArticleNodes(), getIndexMenuHeader()));
 //  hightlightMenuNodeByArticle
 };

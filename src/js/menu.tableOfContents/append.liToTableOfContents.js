@@ -1,10 +1,10 @@
-import {createAnchorNode, createLiNode, createSpanNode} from "./create_indexMenuLiNode.js";
+import {createAnchorNode, createLiNode, createSpanNode} from "./create.contentsNodes.js";
 
 /**
  * Append nodes to each other to build complete anchor node for nav_index_menu_ol node
  * @returns {HTMLElement}
  * */
-const buildAppendedIndexLiNode = (navIndexMenuOlNode, element, index) => {
+const buildTableOfContentsLiNode = (navIndexMenuOlNode, element, index) => {
   return navIndexMenuOlNode.appendChild
   (createAnchorNode(`#jump_to_anchor_${index}`, `jump_to_anchor_${index}`)).appendChild
   (createLiNode("index_menu_ol_li", element.innerHTML)).appendChild
@@ -16,4 +16,4 @@ const buildAppendedIndexLiNode = (navIndexMenuOlNode, element, index) => {
  * @returns {HTMLElement}
  * */
 export const appendLisToIndexNavbar = (mainH2Nodes, navIndexMenuOlNode) =>
-  mainH2Nodes.forEach((h2, index) => buildAppendedIndexLiNode(navIndexMenuOlNode, h2, index));
+  mainH2Nodes.forEach((h2, index) => buildTableOfContentsLiNode(navIndexMenuOlNode, h2, index));
