@@ -5,7 +5,7 @@ import {
   getNavIndexMenuOlNode,
   getOpenIndexMenuButton,
   getCloseIndexMenuButton
-} from "./helper/get.domNodes.js";
+} from "./helper/create.domNodesReference.js";
 import {addIdToArticleNodes, addPageNrToArticleFooterSpans} from "./actions/edit.articleNodes.js";
 import {appendLiToTableOfContents} from "./menu.tableOfContents/append.liToTableOfContents.js";
 import {openAndCloseTableOfContents} from "./menu.tableOfContents/events/onClick.openAndCloseTableOfContents.js";

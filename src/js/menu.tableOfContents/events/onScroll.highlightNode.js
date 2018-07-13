@@ -1,4 +1,4 @@
-import {getIndexMenuAnchorNodes, getMainArticleNodes, getIndexMenuHeader} from "../../helper/get.domNodes.js";
+import {getIndexMenuAnchorNodes, getMainArticleNodes, getIndexMenuHeader} from "../../helper/create.domNodesReference.js";
 import {highlightMenuNodeByArticleOnSight} from "../highlight.listNode.js";
 
 /**

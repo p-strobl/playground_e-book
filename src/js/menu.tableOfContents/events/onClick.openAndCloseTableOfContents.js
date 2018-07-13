@@ -1,4 +1,4 @@
-import {getOpenIndexMenuButton, getNavIndexMenu, getMainContent} from "../../helper/get.domNodes.js";
+import {getOpenIndexMenuButton, getNavIndexMenu, getMainContent} from "../../helper/create.domNodesReference.js";
 import {toggleCssClassFrom} from "../../actions/toggle.cssClass.js";
 
 /**

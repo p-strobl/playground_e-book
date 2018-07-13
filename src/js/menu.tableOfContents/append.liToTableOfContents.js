@@ -1,4 +1,4 @@
-import {createAnchorNode, createLiNode, createSpanNode} from "./create.contentsNodes.js";
+import {createAnchorNode, createLiNode, createSpanNode} from "../helper/create.domElements.js";
 
 /**
  * Append nodes to each other to build complete anchor node for nav_index_menu_ol node
